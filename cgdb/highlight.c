@@ -117,6 +117,13 @@ static int highlight_node(struct list_node *node)
                 ibuf_addchar(ibuf, HL_CHAR);
                 ibuf_addchar(ibuf, HLG_TEXT);
                 break;
+            case TOKENIZER_OPERATOR:
+                ibuf_addchar(ibuf, HL_CHAR);
+                ibuf_addchar(ibuf, HLG_OPERATOR);
+                ibuf_add(ibuf, tokenizer_get_data(t));
+                ibuf_addchar(ibuf, HL_CHAR);
+                ibuf_addchar(ibuf, HLG_TEXT);
+                break;
             case TOKENIZER_TEXT:
                 ibuf_add(ibuf, tokenizer_get_data(t));
                 break;

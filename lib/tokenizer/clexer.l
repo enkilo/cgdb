@@ -6,6 +6,7 @@ H       [0-9a-fA-F_]
 L       [a-zA-Z_]
 T       [0-9a-zA-Z_]
 IDENTIFIER {L}+{T}*
+OPERATOR [-^~<=>|°_,;:!?/.'"()\[\]{}@$*&#%+]
 
 %{
 
@@ -142,6 +143,7 @@ IDENTIFIER {L}+{T}*
 \r                      { return(TOKENIZER_NEWLINE); }
 [ \t\v\f]               { return(TOKENIZER_TEXT);    }
 {IDENTIFIER}            { return(TOKENIZER_TEXT);    }
+{OPERATOR}              { return(TOKENIZER_OPERATOR); }
 .                       { return(TOKENIZER_TEXT);    }
 
 %%

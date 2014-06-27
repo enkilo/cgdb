@@ -41,6 +41,7 @@ enum hl_group_kind {
     HLG_DISABLED_BREAKPOINT,
     HLG_SELECTED_LINE_NUMBER,
     HLG_LOGO,
+    HLG_OPERATOR,
 
     HLG_LAST
 };

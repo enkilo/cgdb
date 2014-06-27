@@ -86,12 +86,12 @@ struct default_hl_group_info {
  * could eventually be configurable.
  */
 static const struct default_hl_group_info default_groups_for_curses[] = {
-    {HLG_KEYWORD, A_BOLD, A_BOLD, COLOR_BLUE, COLOR_BLACK},
-    {HLG_TYPE, A_BOLD, A_BOLD, COLOR_GREEN, COLOR_BLACK},
-    {HLG_LITERAL, A_BOLD, A_BOLD, COLOR_RED, COLOR_BLACK},
-    {HLG_COMMENT, A_NORMAL, A_NORMAL, COLOR_YELLOW, COLOR_BLACK},
-    {HLG_DIRECTIVE, A_BOLD, A_BOLD, COLOR_CYAN, COLOR_BLACK},
-    {HLG_TEXT, A_NORMAL, A_NORMAL, COLOR_WHITE, COLOR_BLACK},
+    {HLG_KEYWORD, A_BOLD, A_BOLD, COLOR_RED, COLOR_BLACK},
+    {HLG_TYPE, A_BOLD, A_BOLD, COLOR_RED, COLOR_BLACK},
+    {HLG_LITERAL, A_BOLD, A_BOLD, COLOR_CYAN, COLOR_BLACK},
+    {HLG_COMMENT, A_BOLD, A_BOLD, COLOR_GREEN, COLOR_BLACK},
+    {HLG_DIRECTIVE, A_NORMAL, A_NORMAL, COLOR_GREEN, COLOR_BLACK},
+    {HLG_TEXT, A_BOLD, A_BOLD, COLOR_YELLOW, COLOR_BLACK},
     {HLG_SEARCH, A_NORMAL, A_NORMAL, COLOR_BLACK, COLOR_WHITE},
     {HLG_STATUS_BAR, A_NORMAL, A_NORMAL, COLOR_BLACK, COLOR_WHITE},
     {HLG_ARROW, A_BOLD, A_BOLD, COLOR_GREEN, COLOR_BLACK},
@@ -100,6 +100,7 @@ static const struct default_hl_group_info default_groups_for_curses[] = {
     {HLG_DISABLED_BREAKPOINT, A_BOLD, A_BOLD, COLOR_YELLOW, COLOR_BLACK},
     {HLG_SELECTED_LINE_NUMBER, A_BOLD, A_BOLD, COLOR_WHITE, COLOR_BLACK},
     {HLG_LOGO, A_BOLD, A_BOLD, COLOR_BLUE, COLOR_BLACK},
+    {HLG_OPERATOR, A_BOLD, A_BOLD, COLOR_CYAN, COLOR_BLACK},
     {HLG_LAST, A_NORMAL, A_NORMAL, -1, -1}
 };
 
@@ -109,12 +110,12 @@ static const struct default_hl_group_info default_groups_for_curses[] = {
  */
 static const struct default_hl_group_info default_groups_for_background_dark[]
         = {
-    {HLG_KEYWORD, A_BOLD, A_BOLD, COLOR_BLUE, -1},
-    {HLG_TYPE, A_BOLD, A_BOLD, COLOR_GREEN, -1},
-    {HLG_LITERAL, A_BOLD, A_BOLD, COLOR_RED, -1},
-    {HLG_COMMENT, A_NORMAL, A_NORMAL, COLOR_YELLOW, -1},
-    {HLG_DIRECTIVE, A_BOLD, A_BOLD, COLOR_CYAN, -1},
-    {HLG_TEXT, A_NORMAL, A_NORMAL, -1, -1},
+    {HLG_KEYWORD, A_BOLD, A_BOLD, COLOR_RED, -1},
+    {HLG_TYPE, A_BOLD, A_BOLD, COLOR_RED, -1},
+    {HLG_LITERAL, A_BOLD, A_BOLD, COLOR_CYAN, -1},
+    {HLG_COMMENT, A_BOLD, A_BOLD, COLOR_GREEN, -1},
+    {HLG_DIRECTIVE, A_NORMAL, A_NORMAL, COLOR_GREEN, -1},
+    {HLG_TEXT, A_BOLD, A_BOLD, COLOR_YELLOW, -1},
     {HLG_SEARCH, A_REVERSE, A_REVERSE, -1, -1},
     {HLG_STATUS_BAR, A_REVERSE, A_REVERSE, -1, -1},
     {HLG_ARROW, A_BOLD, A_BOLD, COLOR_GREEN, -1},
@@ -123,6 +124,7 @@ static const struct default_hl_group_info default_groups_for_background_dark[]
     {HLG_DISABLED_BREAKPOINT, A_BOLD, A_BOLD, COLOR_YELLOW, -1},
     {HLG_SELECTED_LINE_NUMBER, A_BOLD, A_BOLD, -1, -1},
     {HLG_LOGO, A_BOLD, A_BOLD, COLOR_BLUE, -1},
+    {HLG_OPERATOR, A_BOLD, A_BOLD, COLOR_CYAN, -1},
     {HLG_LAST, A_NORMAL, A_NORMAL, -1, -1}
 };
 
@@ -148,6 +150,7 @@ static struct hl_group_name hl_group_names[] = {
     {HLG_DISABLED_BREAKPOINT, "DisabledBreakpoint"},
     {HLG_SELECTED_LINE_NUMBER, "SelectedLineNr"},
     {HLG_LOGO, "Logo"},
+    {HLG_OPERATOR, "Operator"},
     {HLG_LAST, NULL}
 };
 
