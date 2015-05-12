@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cgdb-0.6.7 (01/14/2013)
 
   * Changed documentation license from GFDL to GPL (github #6).
@@ -10,6 +11,8 @@ cgdb-0.6.7 (01/14/2013)
   * Fixed a bug opening files (and toggling breakpoints in files) with
     special characters (e.g. space) in their names.
 
+=======
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 cgdb-0.6.6 (09/06/2011)
 
   * Fixed a compile error on Cygwin 1.7 (signature for path conversion

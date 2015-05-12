@@ -25,6 +25,7 @@ Contributors
   the way for letting cgdb run with a white background color.
   He can be reached at "steve *at* folta *dot* net".
 
+<<<<<<< HEAD
   Iain Buclaw provided a syntax highlighter for the D language,
   so cgdb plays nicely in a gdc development environment.
   He can be reached at "ibuclaw *at* gdcproject *dot* org".
@@ -36,4 +37,6 @@ Contributors
   Andy Song provided a syntax highlighter for Go language.
   He can be reached at "wsong.cn *at* gmail *dot* com"
 
+=======
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 For more information please see http://cgdb.sourceforge.net/

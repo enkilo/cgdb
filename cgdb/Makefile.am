@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 DEFS += -DPKGDATADIR=\"$(pkgdatadir)\"
 
 AM_CFLAGS = \
@@ -101,3 +102,7 @@ cgdb_SOURCES = \
     sources.h \
     usage.c \
     usage.h
+=======
+SUBDIRS = tokenizer lib src
+EXTRA_DIST = include
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
