@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 noinst_LIBRARIES=libgdbmi.a
 
 libgdbmi_a_SOURCES= \
@@ -18,3 +19,10 @@ noinst_PROGRAMS = gdbmi_driver
 
 gdbmi_driver_LDADD = libgdbmi.a
 gdbmi_driver_SOURCES = gdbmi_driver.c
+=======
+SUBDIRS=src
+DIST_SUBDIRS=src
+
+dist-hook:
+	rm -rf `find $(distdir) -name .svn`
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e

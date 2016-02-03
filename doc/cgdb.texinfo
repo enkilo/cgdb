@@ -12,6 +12,7 @@ This manual is for @acronym{GNU} CGDB
 (version @value{VERSION}, @value{UPDATED}),
 the @acronym{GNU} ncurses based front end to GDB.
 
+<<<<<<< HEAD
 Copyright @copyright{} 2013 CGDB Team
 
 @quotation
@@ -28,6 +29,22 @@ details.
 You should have received a copy of the GNU General Public License along with
 this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 Place, Suite 330, Boston MA 02111-1307 USA
+=======
+Copyright @copyright{} 2011 CGDB Team
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with the Front-Cover Texts being ``A GNU Manual,''
+and with the Back-Cover Texts as in (a) below.  A copy of the
+license is included in the section entitled ``GNU Free Documentation
+License.''
+
+(a) The FSF's Back-Cover Text is: ``You have freedom to copy and modify
+this GNU Manual, like GNU software.  Copies published by the Free
+Software Foundation raise funds for GNU development.''
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 @end quotation
 @end copying
 
@@ -686,7 +703,11 @@ Searches wrap around the end of file.  The default is on.
 @itemx :continue
 Send a continue command to GDB.
 
+<<<<<<< HEAD
 @item :down
+=======
+@itemx :down
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 Send a down command to GDB.
 
 @item :e
@@ -752,7 +773,11 @@ Send a step command to GDB.
 @item :syntax
 Turn the syntax on or off.
 
+<<<<<<< HEAD
 @item :up
+=======
+@itemx :up
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 Send an up command to GDB.
 
 @item :map @var{lhs} @var{rhs}
@@ -1304,11 +1329,19 @@ This has the program m4, and must be version 1.4.3.
 @node Copying This Manual
 @appendix Copying This Manual
 
+<<<<<<< HEAD
 @c @menu
 @c * GNU General Public License::  License for copying this manual.
 @c @end menu
 
 @include gpl.texi
+=======
+@menu
+* GNU Free Documentation License::  License for copying this manual.
+@end menu
+
+@include fdl.texi
+>>>>>>> 7af60661c707f873fc31f1755b892c7656c68f2e
 
 
 @node Index
